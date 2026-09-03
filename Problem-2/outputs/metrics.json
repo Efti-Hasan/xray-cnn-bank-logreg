@@ -1,0 +1,686 @@
+{
+  "n_rows": 45211,
+  "n_columns": 57,
+  "subscription_rate": 0.11698480458295547,
+  "majority_baseline_accuracy": 0.8830151954170445,
+  "l2": 30.0,
+  "cv": [
+    {
+      "l2": 0.03,
+      "cv_auc_mean": 0.7651275603900516,
+      "cv_auc_std": 0.008157466662520223
+    },
+    {
+      "l2": 0.1,
+      "cv_auc_mean": 0.7651400680838158,
+      "cv_auc_std": 0.008145933941638085
+    },
+    {
+      "l2": 0.3,
+      "cv_auc_mean": 0.765174724810461,
+      "cv_auc_std": 0.00811687100955537
+    },
+    {
+      "l2": 1.0,
+      "cv_auc_mean": 0.7652538231390188,
+      "cv_auc_std": 0.008033081056661482
+    },
+    {
+      "l2": 3.0,
+      "cv_auc_mean": 0.7653906082959289,
+      "cv_auc_std": 0.007950025481776197
+    },
+    {
+      "l2": 10.0,
+      "cv_auc_mean": 0.7656120777612274,
+      "cv_auc_std": 0.007851700790161406
+    },
+    {
+      "l2": 30.0,
+      "cv_auc_mean": 0.765887122251411,
+      "cv_auc_std": 0.007739558367625364
+    },
+    {
+      "l2": 100.0,
+      "cv_auc_mean": 0.7652678384371457,
+      "cv_auc_std": 0.007482905825608026
+    }
+  ],
+  "threshold": 0.605,
+  "test_no_duration_at_0.5": {
+    "threshold": 0.5,
+    "accuracy": 0.7534949566448417,
+    "balanced_accuracy": 0.7062069676417888,
+    "precision": 0.2689393939393939,
+    "recall": 0.6444780635400907,
+    "specificity": 0.767935871743487,
+    "f1": 0.3795100222717149,
+    "roc_auc": 0.7729398282192221,
+    "pr_auc": 0.4106455964742533,
+    "brier": 0.18303219354569128,
+    "confusion": {
+      "tn": 7664,
+      "fp": 2316,
+      "fn": 470,
+      "tp": 852
+    },
+    "flag_rate": 0.2803043709078039
+  },
+  "test_no_duration_tuned": {
+    "threshold": 0.605,
+    "accuracy": 0.8557777384533711,
+    "balanced_accuracy": 0.6965311864273176,
+    "precision": 0.40375,
+    "recall": 0.4886535552193646,
+    "specificity": 0.9044088176352706,
+    "f1": 0.4421629021218344,
+    "roc_auc": 0.7729398282192221,
+    "pr_auc": 0.4106455964742533,
+    "brier": 0.18303219354569128,
+    "confusion": {
+      "tn": 9026,
+      "fp": 954,
+      "fn": 676,
+      "tp": 646
+    },
+    "flag_rate": 0.14156786409485048
+  },
+  "train_no_duration_tuned": {
+    "threshold": 0.605,
+    "accuracy": 0.853991565661034,
+    "balanced_accuracy": 0.6959082155927474,
+    "precision": 0.3989317995069844,
+    "recall": 0.48953869422737584,
+    "specificity": 0.9022777369581191,
+    "f1": 0.43961516694963215,
+    "roc_auc": 0.7700726909096769,
+    "pr_auc": 0.40758400075469337,
+    "brier": 0.1846457363608608,
+    "confusion": {
+      "tn": 27016,
+      "fp": 2926,
+      "fn": 2025,
+      "tp": 1942
+    },
+    "flag_rate": 0.14356070659706863
+  },
+  "test_with_duration_tuned": {
+    "threshold": 0.699,
+    "accuracy": 0.8883383471951867,
+    "balanced_accuracy": 0.7910906533187404,
+    "precision": 0.5176886792452831,
+    "recall": 0.6641452344931922,
+    "specificity": 0.9180360721442886,
+    "f1": 0.5818422796554009,
+    "roc_auc": 0.9143691316066324,
+    "pr_auc": 0.5401545312552076,
+    "brier": 0.11854739373969812,
+    "confusion": {
+      "tn": 9162,
+      "fp": 818,
+      "fn": 444,
+      "tp": 878
+    },
+    "flag_rate": 0.15006193594054149
+  },
+  "test_chronological_tuned": {
+    "threshold": 0.734,
+    "accuracy": 0.7262673626470848,
+    "balanced_accuracy": 0.5687754487972246,
+    "precision": 0.5197215777262181,
+    "recall": 0.2136724960254372,
+    "specificity": 0.923878401569012,
+    "f1": 0.3028391167192429,
+    "roc_auc": 0.7266371125751309,
+    "pr_auc": 0.4794139459042623,
+    "brier": 0.2044091424469076,
+    "confusion": {
+      "tn": 7537,
+      "fp": 621,
+      "fn": 2473,
+      "tp": 672
+    },
+    "flag_rate": 0.11439440856409802
+  },
+  "duration_auc_inflation": 0.14142930338741022,
+  "lift": [
+    {
+      "decile": 1,
+      "customers": 1130,
+      "subscribers": 553,
+      "response_rate": 0.4893805309734513,
+      "lift": 4.183796339683772,
+      "cumulative_recall": 0.4183055975794251
+    },
+    {
+      "decile": 2,
+      "customers": 1130,
+      "subscribers": 191,
+      "response_rate": 0.16902654867256636,
+      "lift": 1.4450363487877043,
+      "cumulative_recall": 0.5627836611195158
+    },
+    {
+      "decile": 3,
+      "customers": 1131,
+      "subscribers": 123,
+      "response_rate": 0.10875331564986737,
+      "lift": 0.929750358150379,
+      "cumulative_recall": 0.6558245083207261
+    },
+    {
+      "decile": 4,
+      "customers": 1130,
+      "subscribers": 101,
+      "response_rate": 0.08938053097345133,
+      "lift": 0.7641291687306709,
+      "cumulative_recall": 0.7322239031770046
+    },
+    {
+      "decile": 5,
+      "customers": 1130,
+      "subscribers": 88,
+      "response_rate": 0.07787610619469026,
+      "lift": 0.6657759093890994,
+      "cumulative_recall": 0.7987897125567323
+    },
+    {
+      "decile": 6,
+      "customers": 1130,
+      "subscribers": 77,
+      "response_rate": 0.06814159292035399,
+      "lift": 0.582553920715462,
+      "cumulative_recall": 0.857034795763994
+    },
+    {
+      "decile": 7,
+      "customers": 1130,
+      "subscribers": 56,
+      "response_rate": 0.049557522123893805,
+      "lift": 0.42367557870215417,
+      "cumulative_recall": 0.8993948562783661
+    },
+    {
+      "decile": 8,
+      "customers": 1131,
+      "subscribers": 64,
+      "response_rate": 0.05658709106984969,
+      "lift": 0.48377254407824594,
+      "cumulative_recall": 0.9478063540090772
+    },
+    {
+      "decile": 9,
+      "customers": 1130,
+      "subscribers": 42,
+      "response_rate": 0.03716814159292035,
+      "lift": 0.3177566840266156,
+      "cumulative_recall": 0.9795763993948563
+    },
+    {
+      "decile": 10,
+      "customers": 1130,
+      "subscribers": 27,
+      "response_rate": 0.023893805309734513,
+      "lift": 0.20427215401711002,
+      "cumulative_recall": 1.0
+    }
+  ],
+  "coefficients": [
+    {
+      "feature": "poutcome_success",
+      "coef": 1.3576636630943897,
+      "odds_ratio": 3.88710110694382,
+      "std_err": 0.11055873682514777,
+      "z": 12.280021480722766,
+      "scaled": false
+    },
+    {
+      "feature": "month_mar",
+      "coef": 0.9284590110944109,
+      "odds_ratio": 2.5306065348309335,
+      "std_err": 0.11356729475944503,
+      "z": 8.175408360840557,
+      "scaled": false
+    },
+    {
+      "feature": "month_jan",
+      "coef": -0.8957720311659868,
+      "odds_ratio": 0.40829226258033446,
+      "std_err": 0.10770783556093463,
+      "z": -8.316683985903818,
+      "scaled": false
+    },
+    {
+      "feature": "month_oct",
+      "coef": 0.8040049956315313,
+      "odds_ratio": 2.2344720828680376,
+      "std_err": 0.10979330433155557,
+      "z": 7.32289642366154,
+      "scaled": false
+    },
+    {
+      "feature": "poutcome_failure",
+      "coef": -0.7791274773137937,
+      "odds_ratio": 0.4588061554916352,
+      "std_err": 0.1060530510531689,
+      "z": -7.346582390384828,
+      "scaled": false
+    },
+    {
+      "feature": "month_nov",
+      "coef": -0.691115330506692,
+      "odds_ratio": 0.5010169578296682,
+      "std_err": 0.10124090064044915,
+      "z": -6.826443918759137,
+      "scaled": false
+    },
+    {
+      "feature": "contact_unknown",
+      "coef": -0.6578896570331639,
+      "odds_ratio": 0.5179432197913447,
+      "std_err": 0.1097440136848851,
+      "z": -5.994765773030719,
+      "scaled": false
+    },
+    {
+      "feature": "month_sep",
+      "coef": 0.6145664170453414,
+      "odds_ratio": 1.8488547938219981,
+      "std_err": 0.1121855930997911,
+      "z": 5.478122458190096,
+      "scaled": false
+    },
+    {
+      "feature": "month_aug",
+      "coef": -0.5881363892659226,
+      "odds_ratio": 0.5553612982125741,
+      "std_err": 0.09669301464937585,
+      "z": -6.08251166228086,
+      "scaled": false
+    },
+    {
+      "feature": "month_dec",
+      "coef": 0.477028499602904,
+      "odds_ratio": 1.611279364221932,
+      "std_err": 0.12818372560194605,
+      "z": 3.721443555824234,
+      "scaled": false
+    },
+    {
+      "feature": "poutcome_other",
+      "coef": -0.45842657112616636,
+      "odds_ratio": 0.6322777072599964,
+      "std_err": 0.10884621732557549,
+      "z": -4.211690423333161,
+      "scaled": false
+    },
+    {
+      "feature": "month_jul",
+      "coef": -0.45491380032533163,
+      "odds_ratio": 0.634502659513823,
+      "std_err": 0.09573847114139296,
+      "z": -4.7516300908282165,
+      "scaled": false
+    },
+    {
+      "feature": "contact_cellular",
+      "coef": 0.45026186979431304,
+      "odds_ratio": 1.568722932858419,
+      "std_err": 0.10782745471994527,
+      "z": 4.175762758786759,
+      "scaled": false
+    },
+    {
+      "feature": "job_retired",
+      "coef": 0.40082874276274383,
+      "odds_ratio": 1.4930615490077417,
+      "std_err": 0.07514378788261539,
+      "z": 5.334156742123404,
+      "scaled": false
+    },
+    {
+      "feature": "job_student",
+      "coef": 0.3760570569671667,
+      "odds_ratio": 1.4565302365981527,
+      "std_err": 0.08589960680713703,
+      "z": 4.377867035078462,
+      "scaled": false
+    },
+    {
+      "feature": "month_may",
+      "coef": -0.2916174090356492,
+      "odds_ratio": 0.7470542975290909,
+      "std_err": 0.09445852121690847,
+      "z": -3.08725359320413,
+      "scaled": false
+    },
+    {
+      "feature": "month_feb",
+      "coef": -0.2541391657471615,
+      "odds_ratio": 0.7755838598283811,
+      "std_err": 0.10156336341199755,
+      "z": -2.5022720517459778,
+      "scaled": false
+    },
+    {
+      "feature": "housing_no",
+      "coef": 0.22799592059440865,
+      "odds_ratio": 1.256080201361296,
+      "std_err": 0.12987740080434076,
+      "z": 1.7554703064768182,
+      "scaled": false
+    },
+    {
+      "feature": "housing_yes",
+      "coef": -0.22799592059440862,
+      "odds_ratio": 0.7961275075558351,
+      "std_err": 0.1298774008043407,
+      "z": -1.755470306476819,
+      "scaled": false
+    },
+    {
+      "feature": "month_jun",
+      "coef": 0.22204968359409896,
+      "odds_ratio": 1.2486334129188743,
+      "std_err": 0.09702274137103004,
+      "z": 2.28863543182053,
+      "scaled": false
+    },
+    {
+      "feature": "job_entrepreneur",
+      "coef": -0.2122039742683706,
+      "odds_ratio": 0.8087997064117232,
+      "std_err": 0.08248780140523454,
+      "z": -2.5725497667938146,
+      "scaled": false
+    },
+    {
+      "feature": "contact_telephone",
+      "coef": 0.20762778723888356,
+      "odds_ratio": 1.2307549815725027,
+      "std_err": 0.11077368718711945,
+      "z": 1.874342115995089,
+      "scaled": false
+    },
+    {
+      "feature": "marital_married",
+      "coef": -0.20742728325231674,
+      "odds_ratio": 0.8126723345136537,
+      "std_err": 0.10693684033646648,
+      "z": -1.939717711872417,
+      "scaled": false
+    },
+    {
+      "feature": "job_housemaid",
+      "coef": -0.2020161190118936,
+      "odds_ratio": 0.8170817572855242,
+      "std_err": 0.08554348594445292,
+      "z": -2.361560518390277,
+      "scaled": false
+    },
+    {
+      "feature": "loan_no",
+      "coef": 0.18898533267749432,
+      "odds_ratio": 1.2080232338865942,
+      "std_err": 0.13045127165435544,
+      "z": 1.448704411086395,
+      "scaled": false
+    },
+    {
+      "feature": "loan_yes",
+      "coef": -0.18898533267747714,
+      "odds_ratio": 0.8277986481954488,
+      "std_err": 0.13045127165435622,
+      "z": -1.4487044110862546,
+      "scaled": false
+    },
+    {
+      "feature": "education_tertiary",
+      "coef": 0.1787287221391669,
+      "odds_ratio": 1.195696334223501,
+      "std_err": 0.09576412917437566,
+      "z": 1.8663431044595216,
+      "scaled": false
+    },
+    {
+      "feature": "job_unknown",
+      "coef": -0.16132924179168015,
+      "odds_ratio": 0.8510118363154506,
+      "std_err": 0.12266454446750051,
+      "z": -1.3152067901285338,
+      "scaled": false
+    },
+    {
+      "feature": "was_contacted_before",
+      "coef": 0.15784285830501776,
+      "odds_ratio": 1.1709821701260732,
+      "std_err": 0.15437660565287548,
+      "z": 1.0224532249396412,
+      "scaled": false
+    },
+    {
+      "feature": "never_contacted",
+      "coef": -0.15784285830500858,
+      "odds_ratio": 0.8539839679133157,
+      "std_err": 0.15437660565286795,
+      "z": -1.0224532249396314,
+      "scaled": false
+    },
+    {
+      "feature": "balance_signed_log",
+      "coef": 0.15468455253698932,
+      "odds_ratio": 1.167289684452652,
+      "std_err": 0.015602231622282551,
+      "z": 9.914258183173896,
+      "scaled": true
+    },
+    {
+      "feature": "campaign_log",
+      "coef": -0.1529374854987612,
+      "odds_ratio": 0.8581833690397984,
+      "std_err": 0.031846925824370084,
+      "z": -4.802268399222682,
+      "scaled": true
+    },
+    {
+      "feature": "previous_log",
+      "coef": 0.14776582502261826,
+      "odds_ratio": 1.1592413992468504,
+      "std_err": 0.03698380798583915,
+      "z": 3.9954194300164225,
+      "scaled": true
+    },
+    {
+      "feature": "education_primary",
+      "coef": -0.1469357665265517,
+      "odds_ratio": 0.8633494315680832,
+      "std_err": 0.09692019102006642,
+      "z": -1.51604908100243,
+      "scaled": false
+    },
+    {
+      "feature": "job_unemployed",
+      "coef": 0.13383688335397467,
+      "odds_ratio": 1.1432063284531393,
+      "std_err": 0.08003889918569962,
+      "z": 1.6721479769912555,
+      "scaled": false
+    },
+    {
+      "feature": "marital_single",
+      "coef": 0.13090722856868311,
+      "odds_ratio": 1.1398620297746995,
+      "std_err": 0.10766215754971412,
+      "z": 1.2159075347179007,
+      "scaled": false
+    },
+    {
+      "feature": "month_apr",
+      "coef": 0.12958551907847518,
+      "odds_ratio": 1.138356458495518,
+      "std_err": 0.09798652384619132,
+      "z": 1.3224830720792236,
+      "scaled": false
+    },
+    {
+      "feature": "poutcome_unknown",
+      "coef": -0.12010961465442427,
+      "odds_ratio": 0.88682322256813,
+      "std_err": 0.15315983934367797,
+      "z": -0.7842108947692761,
+      "scaled": false
+    },
+    {
+      "feature": "job_blue-collar",
+      "coef": -0.09372716548447856,
+      "odds_ratio": 0.9105311526803922,
+      "std_err": 0.06294063068793812,
+      "z": -1.4891361027057572,
+      "scaled": false
+    },
+    {
+      "feature": "job_management",
+      "coef": -0.09047089859083961,
+      "odds_ratio": 0.913500917678112,
+      "std_err": 0.0632587541750305,
+      "z": -1.430171993911165,
+      "scaled": false
+    },
+    {
+      "feature": "job_services",
+      "coef": -0.08863325079454971,
+      "odds_ratio": 0.915181153994835,
+      "std_err": 0.0680235631785807,
+      "z": -1.3029786540564314,
+      "scaled": false
+    },
+    {
+      "feature": "marital_divorced",
+      "coef": 0.07652005468364197,
+      "odds_ratio": 1.0795238396291675,
+      "std_err": 0.10849081086582472,
+      "z": 0.7053136949845239,
+      "scaled": false
+    },
+    {
+      "feature": "campaign",
+      "coef": -0.06203378904438897,
+      "odds_ratio": 0.9398511295830326,
+      "std_err": 0.03669020018508244,
+      "z": -1.6907454505961177,
+      "scaled": true
+    },
+    {
+      "feature": "job_technician",
+      "coef": -0.05381334538520806,
+      "odds_ratio": 0.9476089655819472,
+      "std_err": 0.0621479243377723,
+      "z": -0.8658912740630559,
+      "scaled": false
+    },
+    {
+      "feature": "month_cos",
+      "coef": 0.04361626219019885,
+      "odds_ratio": 1.0445814325777425,
+      "std_err": 0.04652958231264899,
+      "z": 0.9373877869164075,
+      "scaled": true
+    },
+    {
+      "feature": "education_unknown",
+      "coef": -0.03680461601613206,
+      "odds_ratio": 0.9638644406268551,
+      "std_err": 0.10210339629172334,
+      "z": -0.36046417017291227,
+      "scaled": false
+    },
+    {
+      "feature": "month_sin",
+      "coef": -0.026700120410728445,
+      "odds_ratio": 0.9736531764641351,
+      "std_err": 0.04913787133966203,
+      "z": -0.5433715316271185,
+      "scaled": true
+    },
+    {
+      "feature": "default_yes",
+      "coef": 0.024639015039830875,
+      "odds_ratio": 1.024945063982927,
+      "std_err": 0.13790569227634192,
+      "z": 0.17866568546320813,
+      "scaled": false
+    },
+    {
+      "feature": "default_no",
+      "coef": -0.02463901503978862,
+      "odds_ratio": 0.9756620477921534,
+      "std_err": 0.13790569227634203,
+      "z": -0.17866568546290157,
+      "scaled": false
+    },
+    {
+      "feature": "job_admin.",
+      "coef": -0.018355892771136948,
+      "odds_ratio": 0.9818115505395072,
+      "std_err": 0.06490771886108863,
+      "z": -0.2827998440435268,
+      "scaled": false
+    },
+    {
+      "feature": "previous",
+      "coef": -0.018294135169312043,
+      "odds_ratio": 0.9818721867386664,
+      "std_err": 0.02077192092592322,
+      "z": -0.8807146548724382,
+      "scaled": true
+    },
+    {
+      "feature": "balance",
+      "coef": 0.016184006234732966,
+      "odds_ratio": 1.016315676622748,
+      "std_err": 0.013637506056706251,
+      "z": 1.1867277028100363,
+      "scaled": true
+    },
+    {
+      "feature": "age",
+      "coef": 0.014866357125830641,
+      "odds_ratio": 1.0149774110529248,
+      "std_err": 0.015369163707450196,
+      "z": 0.9672847143025863,
+      "scaled": true
+    },
+    {
+      "feature": "pdays",
+      "coef": -0.011757631839373096,
+      "odds_ratio": 0.9883112190087041,
+      "std_err": 0.021589980327544854,
+      "z": -0.5445874271766943,
+      "scaled": true
+    },
+    {
+      "feature": "job_self-employed",
+      "coef": 0.00982720501430257,
+      "odds_ratio": 1.0098756505582176,
+      "std_err": 0.07841113627023037,
+      "z": 0.12532920043952447,
+      "scaled": false
+    },
+    {
+      "feature": "education_secondary",
+      "coef": 0.005011660403541743,
+      "odds_ratio": 1.0050242397792823,
+      "std_err": 0.09430683540488904,
+      "z": 0.05314206952258658,
+      "scaled": false
+    },
+    {
+      "feature": "day",
+      "coef": 0.004233895116140855,
+      "odds_ratio": 1.0042428707128426,
+      "std_err": 0.013697487212952074,
+      "z": 0.3091001327701454,
+      "scaled": true
+    }
+  ]
+}
