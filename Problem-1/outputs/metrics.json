@@ -1,0 +1,89 @@
+{
+  "threshold": 0.2980000078678131,
+  "validation": {
+    "threshold": 0.2980000078678131,
+    "accuracy": 0.9834183673469388,
+    "balanced_accuracy": 0.9839609841017896,
+    "precision": 0.9947916666666666,
+    "recall_sensitivity": 0.9828473413379074,
+    "specificity": 0.9850746268656716,
+    "f1": 0.988783433994823,
+    "roc_auc": 0.9992405041686934,
+    "confusion": {
+      "tn": 198,
+      "fp": 3,
+      "fn": 10,
+      "tp": 573
+    }
+  },
+  "test_at_0.5": {
+    "threshold": 0.5,
+    "accuracy": 0.8733974358974359,
+    "balanced_accuracy": 0.8346153846153846,
+    "precision": 0.8373101952277657,
+    "recall_sensitivity": 0.9897435897435898,
+    "specificity": 0.6794871794871795,
+    "f1": 0.9071680376028202,
+    "roc_auc": 0.9645737453429761,
+    "confusion": {
+      "tn": 159,
+      "fp": 75,
+      "fn": 4,
+      "tp": 386
+    }
+  },
+  "test_at_threshold": {
+    "threshold": 0.2980000078678131,
+    "accuracy": 0.842948717948718,
+    "balanced_accuracy": 0.7931623931623932,
+    "precision": 0.8029045643153527,
+    "recall_sensitivity": 0.9923076923076923,
+    "specificity": 0.594017094017094,
+    "f1": 0.8876146788990826,
+    "roc_auc": 0.9645737453429761,
+    "confusion": {
+      "tn": 139,
+      "fp": 95,
+      "fn": 3,
+      "tp": 387
+    }
+  },
+  "shipped_val_folder": {
+    "threshold": 0.2980000078678131,
+    "accuracy": 0.8125,
+    "balanced_accuracy": 0.8125,
+    "precision": 0.7272727272727273,
+    "recall_sensitivity": 1.0,
+    "specificity": 0.625,
+    "f1": 0.8421052631578948,
+    "roc_auc": 1.0,
+    "confusion": {
+      "tn": 5,
+      "fp": 3,
+      "fn": 0,
+      "tp": 8
+    }
+  },
+  "n_params": 98241,
+  "config": {
+    "img": 96,
+    "widths": [
+      16,
+      32,
+      64,
+      128
+    ],
+    "dropout": 0.4,
+    "seed": 7,
+    "val_frac": 0.15,
+    "batch": 32,
+    "lr": 0.002,
+    "weight_decay": 0.0001,
+    "aug_strength": 1.0,
+    "patience": 8,
+    "epochs_run": 30,
+    "best_epoch": 27,
+    "best_val_auc": 0.9992448091506958,
+    "n_params": 98241
+  }
+}
