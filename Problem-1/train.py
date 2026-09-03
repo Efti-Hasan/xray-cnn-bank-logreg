@@ -18,9 +18,9 @@ Three of those choices are not the default, and each one is here for a reason.
 
 Needs `tensorflow`. TensorFlow has no wheel for Python 3.14 yet, so use 3.12:
 
-    python3.12 -m venv .venv-tf
-    .venv-tf/bin/pip install tensorflow numpy opencv-python matplotlib
-    .venv-tf/bin/python train.py
+    python3.12 -m venv .venv
+    .venv/bin/pip install tensorflow matplotlib numpy
+    .venv/bin/python train.py
 """
 from __future__ import annotations
 
