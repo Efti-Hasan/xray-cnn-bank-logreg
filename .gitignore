@@ -1,0 +1,16 @@
+# Datasets are supplied separately and are far too large for git.
+data/
+
+# Decoded-image caches: regenerated automatically on first run (~44 MB each).
+**/cache/
+*.npz.tmp
+
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Virtualenv for the Keras script, which needs Python 3.12.
+.venv*/
+
+# Raw training logs; the numbers that matter live in outputs/*/metrics.json.
+*.log
